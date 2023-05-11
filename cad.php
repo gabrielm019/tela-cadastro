@@ -1,3 +1,9 @@
+
+<?php
+include "conexao.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +18,9 @@
 </head>
 
 <body>
+
+    
+
     <!-- Section: Design Block -->
     <section class="text-center text-lg-start">
         <style>
@@ -42,7 +51,7 @@
                                     <div class="col-md-6 mb-4">
 
                                         <div class="form-outline">
-                                            <label class="form-label" for="form3Example1">Nome</label>
+                                            <label class="form-label" name="nome" for="form3Example1">Nome</label>
                                             <input type="text" id="form3Example1" class="form-control" />
                                         </div>
 
@@ -50,7 +59,7 @@
 
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <label class="form-label" for="form3Example2">Sobrenome</label>
+                                            <label class="form-label"  name="sobrenome" for="form3Example2">Sobrenome</label>
                                             <input type="text" id="form3Example2" class="form-control" />
 
                                         </div>
@@ -63,7 +72,7 @@
 
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <label class="form-label" for="form3Example3">Celular</label>
+                                            <label class="form-label" name="celular" for="form3Example3">Celular</label>
                                             <input type="tel" id="form3Example3" class="form-control" />
                                         </div>
 
@@ -72,7 +81,7 @@
 
                                     <div class="col-md-6 mt-2">
                                         <div class="form-outline">
-                                            <label class="control-label" id="campo">CPF</label>
+                                            <label class="control-label" name="cpf" id="campo">CPF</label>
                                             <input type="text" class="form-control" name="cpf" maxlength="14"
                                                 onkeypress="formatar('###.###.###-##', this);" />
                                         </div>
@@ -84,7 +93,7 @@
 
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline mb-4">
-                                            <label class="form-label" for="form3Example3">Email</label>
+                                            <label class="form-label" name="email" for="form3Example3">Email</label>
                                             <input type="email" id="form3Example3" class="form-control" />
                                         </div>
                                     </div>
@@ -92,7 +101,7 @@
                                     <div class="col-md-6 mb-4">
 
                                         <div class="form-outline mb-4">
-                                            <label class="form-label" for="form3Example4">Senha</label>
+                                            <label class="form-label" name="senha" for="form3Example4">Senha</label>
                                             <input type="password" id="form3Example4" class="form-control" />
                                         </div>
                                     </div>
