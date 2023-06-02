@@ -45,14 +45,14 @@ include "conexao.php";
             ">
                         <div class="card-body p-5 shadow-5 text-center">
                             <h2 class="fw-bold mb-5">Criar conta agora</h2>
-                            <form method="post" action="login.ph">
+                            <form action="login.php" method="post">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
 
                                         <div class="form-outline">
                                             <label class="form-label" name="nome" for="form3Example1">Nome</label>
-                                            <input type="text" id="form3Example1" class="form-control" />
+                                            <input type="text" id="form3Example1" name="nome" class="form-control" />
                                         </div>
 
                                     </div>
@@ -60,7 +60,7 @@ include "conexao.php";
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
                                             <label class="form-label"  name="sobrenome" for="form3Example2">Sobrenome</label>
-                                            <input type="text" id="form3Example2" class="form-control" />
+                                            <input type="text" id="form3Example2" name="sobrenome" class="form-control" />
 
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@ include "conexao.php";
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
                                             <label class="form-label" name="celular" for="form3Example3">Celular</label>
-                                            <input type="tel" id="form3Example3" class="form-control" />
+                                            <input type="tel" id="form3Example3" name="celular" class="form-control" />
                                         </div>
 
                                     </div>
@@ -94,7 +94,7 @@ include "conexao.php";
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline mb-4">
                                             <label class="form-label" name="email" for="form3Example3">Email</label>
-                                            <input type="email" id="form3Example3" class="form-control" />
+                                            <input type="email" id="form3Example3" name="email" class="form-control" />
                                         </div>
                                     </div>
 
@@ -102,7 +102,7 @@ include "conexao.php";
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" name="senha" for="form3Example4">Senha</label>
-                                            <input type="password" id="form3Example4" class="form-control" />
+                                            <input type="password" id="form3Example4" name="senha" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
