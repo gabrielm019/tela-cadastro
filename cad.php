@@ -116,6 +116,40 @@ include "conexao.php";
                                     Entrar
                                 </button>
 
+                                
+
+
+                            </form>
+
+                            <form action="entrar.php" method="post">
+                                
+
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary btn-block mb-4">
+                                     Entrar2
+                                </button>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" name="email" for="form3Example3">Email2</label>
+                                            <input type="email" id="form3Example3" name="email" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" name="senha" for="form3Example4">Senha2</label>
+                                            <input type="password" id="form3Example4" name="senha" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
 
                             </form>
                         </div>
