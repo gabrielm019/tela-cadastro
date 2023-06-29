@@ -1,14 +1,16 @@
 <?php
-$email = $_POST["email"];
-$senha = $_POST["senha"];
+$email2 = $_POST["email2"];
+$senha2 = $_POST["senha2"];
 
 
 
 include "conexao.php";
 
-$sql_buscar_usuario = "select * from cadastro where email = '$email' and senha = '" . md5($senha) . "'";
+$sql_buscar_usuario = "select * from cadastro where email = '$email2' and senha = '" . md5($senha2) . "'";
 
 $um_usuario = mysqli_query($conexao, $sql_buscar_usuario);
+
+
 
 if ($um_usuario->num_rows > 0)
 {

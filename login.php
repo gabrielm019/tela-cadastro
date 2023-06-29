@@ -9,16 +9,6 @@ $email = $_POST["email"];
 $senha = $_POST["senha"];
 
 
-
-
-
-
-
-
-
-
-
-
 $sql_inserir_usuario = "insert INTO cadastro(nome, email, cpf, celular, sobrenome, senha) values('$nome','$email', '$cpf', '$celular', '$sobrenome','" . md5($senha) . "')";
 
 
